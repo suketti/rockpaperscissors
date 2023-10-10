@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="titlebar">
+        <div id="title">
+            <h1>Rock<br>Paper<br>Scissors</h1>
+        </div>
+        <div id="scoreboard">
+            <h1 id="scoretext">Score</h1>
+            <h1 id="score">0</h1>
+        </div>
+    </div>
+    <div class="game">
+        <div class="row">
+            <div class="item paper" onclick="gameStart('paper')">
+                <h1>&#128221</h1>
+            </div>
+            <div class="item scissor" onclick="gameStart('scissor')"><h1>&#9986</h1></div>
+        </div>
+        <div class="row">
+            <div class="item rock" onclick="gameStart('rock')"><h1>&#128511</h1></div>
+        </div>
+    </div>
+</body>
+</html>
