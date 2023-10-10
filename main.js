@@ -17,6 +17,7 @@ function gameStart(selection) {
     const result = decideWinner(selection, randomWeapon)
    if (result) {
     alert("Szamitogep nyert")
+    document.getElementById("score").innerText = Number.parseInt(document.getElementById("score").innerText) - 1;
    } else if (!result) {
     alert ("Te nyertel")
     document.getElementById("score").innerText = Number.parseInt(document.getElementById("score").innerText) + 1;
